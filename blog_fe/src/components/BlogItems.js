@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../css/BlogItems.css';
 import '../css/Header.css';
 import $ from "jquery";
