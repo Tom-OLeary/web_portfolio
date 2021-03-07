@@ -15,7 +15,7 @@
   <link href="{% static 'css/../font-awesome.min.css' %}" rel="stylesheet">
   <link href="{% static 'css/index.css' %}" rel="stylesheet">
   <link href="{% static 'css/homepage.css' %}" rel="stylesheet">
-
+  <link rel="icon" href="https://img.icons8.com/color/48/000000/user-location.png" type="image/x-icon">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -169,16 +169,18 @@
         <div class="about-container shadow">
             <div class="about-container-left">
               <img src="{% static 'img/about-me.jpg' %}" alt="Image" class="img-responsive">
-              <h4 class="about-title" style="text-align:center;margin-top:10px;margin-bottom:5px;">How It Started</h4>
               <p class="about-description">As technology continues to improve at a rapid pace, there will always be new
                   knowledge to discover. This provides an exciting and rewarding career path in Computer Science. As
                   someone who is deeply passionate about technology, I am always eager to learn something new. </p>
-              <p class="about-description">I may not know everything (and never will), but when given a specific task
-                  to accomplish, my dedication and passion for computer science will ensure I get it done. What I am
-                  most excited for is the opportunity to work with and learn from other developers. To share diverse
-                  opinions, build strong relationships with my peers and become an integral part of the success &
-                  growth of my team, my employer and myself.
-              </p>
+              <h4 class="about-title" style="text-align:center;margin-top:10px;margin-bottom:5px;">Site Deployment</h4>
+              <li class="about-description"><span class="about-cat">Host: </span>PythonAnywhere</li>
+              <li class="about-description"><span class="about-cat">Database: </span>MySQL</li>
+              <li class="about-description"><span class="about-cat">Framework: </span>Django</li>
+              <h4 class="about-title" style="text-align:center;margin-top:10px;margin-bottom:5px;">Development</h4>
+              <li class="about-description"><span class="about-cat">OS: </span>Windows 10 PC (WSL2) & MacOS M1</li>
+              <li class="about-description"><span class="about-cat">Version Control: </span>Git</li>
+              <p class="welcome-message" style="color:whitesmoke;margin:3rem;"><strong>**NOTE:</strong>The blog page
+                  is still a work in progress. I have decided to deploy it anyway so that I can gain more experience working simultaneously in development & production environments.</p>
             </div>
             <div class="about-container-right">
               <h2 class="about-title">About Me</h2>
@@ -250,7 +252,7 @@
                     through real experience, and not just research. In order to have a strong understanding of the
                     software development cycle, it is important I discover the trade-offs between each technology
                     available today.</p>
-                <a href="#" class="about-link">Source Code</a>
+                <a href="https://github.com/Tom-OLeary/web_portfolio" class="about-link" target="_blank">Source Code</a>
             </div>
             <div class="about-container-right">
               <h2 class="about-title">About This Application</h2>
@@ -272,7 +274,7 @@
                   <li>Node.js</li>
               </ul>
               <ul class="about-ul-2 details-top"><span class="about-cat">Database:</span>
-                  <li>SQLite</li>
+                  <li>MySQL</li>
                   <li>Django ORM</li>
               </ul>
               <h2 class="about-title">Future Plans</h2>
@@ -283,13 +285,21 @@
               </ul>
               <ul class="about-ul-2"><span class="about-cat">Databases:</span>
                   <li>PostgreSQL</li>
-                  <li>MySQL (possible, simply for learning purposes)</li>
+                  <li>MSSQL Server</li>
               </ul>
               <ul class="about-ul-2"><span class="about-cat">Frameworks:</span>
                   <li>Angular</li>
                   <li>Vue</li>
+                  <li>Rails</li>
               </ul>
-                <br><br><br>
+              <p>
+                <ul><span class="about-cat">Performance:</span>
+                  <li>(JS/CSS) Bundling & Minification</li>
+                  <li>Run coverage & remove redundant CSS</li>
+                  <li>Browser Caching</li>
+                  <li>Lazy Loading Images</li>
+                </ul>
+              </p>
               <p>This section will be updated frequently as new ideas arise.</p>
             </div>
           </div>
