@@ -42,11 +42,6 @@ body {
 }
 
 /* Basic */
-
-	/*@-ms-viewport {*/
-	/*	width: device-width;*/
-	/*}*/
-
 	body {
 		-ms-overflow-style: scrollbar;
 	}
@@ -98,7 +93,10 @@ body {
 		font-weight: 300;
 		line-height: 1.65;
 	}
-
+	.block-titles {
+		color: whitesmoke;
+		font-family: serif;
+	}
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
