@@ -2,4 +2,4 @@ venv
 .idea
 .DS_STORE
 .env
-local.py
+/my_portfolio/local.py
