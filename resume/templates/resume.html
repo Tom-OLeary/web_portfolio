@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+{% load static %}
+{% block page_content %}
+
+<html>
+	<head>
+		<title>Resume</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/resume.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="https://img.icons8.com/nolan/96/resume.png"/></span>
+						<h1>Resume</h1>
+						<p>Here you can find a detailed version of my resume. You can view a concise PDF version<br />
+						<a href="{% static 'img/OLearyResume.pdf' %}" target="_blank">Here</a></p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">Education</a></li>
+							<li><a href="#second">Work History</a></li>
+							<li><a href="#third">Skills</a></li>
+							<li><a href="#cta">Directory</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Introduction</h2>
+										</header>
+										<p id="intro-p">Full Stack developer with a passion for both client and
+                                            server side
+                                            development. Proficient in Python with a background in market
+analytics, as well as multiple full stack projects. 4+ years experience creating business solutions as the only tech related
+employee for an automotive parts distributor. Oversee all technological functionality within the company, building API’s and
+database relations, as well as using modern technology to optimize employee efficiency. Hands-on experience with both client and server side JavaScript, async, UI development, data modeling, Web API’s, unit testing, continuous integration & deployment, object oriented design and machine learning.</p>
+									</div>
+									<span class="image"><img src="{% static 'img/pic01.jpg' %}" alt=""
+                                    /></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Education</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1"><img src="https://img.icons8.com/doodle/96/000000/graduation-scroll.png"/></span>
+										<h3>B.S. in Computer Science</h3><br>
+										<p>Received degree from Bridgewater State University in August 2020.</p>
+									</li>
+									<li>
+										<span class="icon major style3"><img src="https://img.icons8.com/nolan/96/certification.png"/></span>
+										<h3>Full Stack Web Development Nanodegree</h3>
+                                        <p><em>In Progress... </em><br><strong>Mid-March 2021 Completion</strong></p>
+
+									</li>
+									<li>
+										<span class="icon major style5"><img src="https://img.icons8.com/nolan/96/certification.png"/></span>
+										<h3>Intermediate JavaScript Nanodegree</h3>
+										<p><em>Completed</em><br>
+                                            <a href="https://confirm.udacity.com/RR2AGQJK" target="_blank">View Certificate</a>
+                                        </p>
+									</li>
+								</ul>
+								<ul class="features">
+									<li>
+                                        <h3><strong><-------------------------------------</strong></h3>
+                                        <p><strong>Moses Brown School, Providence RI</strong><br>
+                                            <em>2007 - 2011</em>
+                                        <br>
+                                            * High School Diploma
+                                            <br>
+                                            * 3 Sport Athlete
+                                            <br>
+                                            * YMCA of Greater Providence Youth Counselor
+                                            <br>
+                                            * Norton 19U American Legion Baseball Coach
+                                        </p>
+									</li>
+									<li>
+										<h3>Timeline</h3>
+                                        <p><strong>University of Tampa, Tampa FL</strong><br>
+                                            <em>2011 - 2015</em>
+                                        <br>
+                                            * Studied Physical Therapy & Human Performance
+                                            <br>
+                                            * Became an ACSM Certified Personal Trainer & ACE Sports Conditioning
+                                            Specialist
+                                            <br>
+                                            * Campus Fitness Center Trainer
+                                            <br>
+                                            * Member of the Astronomy & Physics Club
+                                        </p>
+									</li>
+									<li>
+                                        <h3><strong>-------------------------------------></strong></h3>
+										<p><strong>Bristol Community College, Attleboro MA</strong><br>
+                                            <em>2016 - 2017</em>
+                                            <br>
+                                            * Intro to C++
+                                            <br>
+                                            * Intro to HTML
+                                            <br>
+                                            * Object Oriented Java I
+                                            <br>
+                                            * Object Oriented Concepts
+                                        </p>
+									</li>
+									<li>
+                                        <p><strong>Bridgewater State University, Bridgewater MA</strong><br>
+                                            <em>2018 - 2020</em>
+                                        <br>
+                                            * B.S. in Computer Science
+                                            <br>
+                                            * Spring 2020 Dean's List
+                                            <br>
+                                            * 3.54 GPA in Final Two Semesters
+                                            <br>
+                                            * Completed Independent Research Project on Machine Learning
+                                        </p>
+									</li>
+									<li>
+                                        <p><strong>Udacity, Full Stack Web Development</strong><br>
+                                            <em>12/2020 - 03/2021</em>
+                                        <br>
+                                            * SQL & Data Modeling for the Web
+                                            <br>
+                                            * API Development & Documentation
+                                            <br>
+                                            * Identity & Access Management
+                                            <br>
+                                            * Server Deployment, Containerization & Testing
+                                            <br>
+                                            * 5 Total Projects
+                                        </p>
+									</li>
+									<li>
+										<p><strong>Udacity, Intermediate JavaScript</strong><br>
+                                            <em>12/2020 - 02/2021</em>
+                                        <br>
+                                            * Object Oriented JavaScript
+                                            <br>
+                                            * Functional Programming
+                                            <br>
+                                            * Asynchronous JavaScript
+                                            <br>
+                                            * 3 Total Projects
+                                        </p>
+									</li>
+
+								</ul>
+								<!-- <footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer> -->
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Work History</h2>
+								</header>
+								<ul class="statistics">
+									<li class="style5">
+										<span class="icon solid"><img src="https://img.icons8.com/dusk/64/000000/system-task.png"/></span>
+										<strong>Systems Analyst</strong> Spring Rebuilders INC.
+										<h5>2016 - Present</h5>
+									</li>
+								</ul>
+								<p class="content">
+                                    • Deliver in-depth data analysis on automotive sales using SQL, PostgreSQL, Python
+                                    & Pandas.<br><br>
+                                    • Organize 2500 inventory items within relational databases
+                                    used for comparison, calculations & market research.<br><br>
+                                    • Develop a more modern web presence for the company.<br><br><br>
+                                    • Generate reports to identify annual usages, OEM or
+                                    aftermarket costs & freight policy, allowing for better
+                                    allocation of resources to improve sales & profits.
+                                </p>
+                                <p class="content">
+                                    • Improve worker efficiency through the convenience of modern technology.<br><br>
+                                    • Maintain data integrity between two separate company branches.<br><br><br>
+                                    • Write scripts to improve workflow & automation of tedious tasks.<br><br>
+                                    • Install/Set up new applications & hardware.<br><br>
+                                    • Use data analysis to put forth competitive offers on silent bidding contracts.
+                                </p>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid"><img src="https://img.icons8.com/nolan/64/database.png"/></span>
+										<strong>Database Manager</strong> Spring Rebuilders INC.
+										<h5>2012 - 2016</h5>
+									</li>
+								</ul>
+                                <p class="content">
+                                    • Maintained data integrity by keeping inventory counts up-to-date.<br><br>
+                                    • Organized products & tracked orders.<br>
+                                    • Made occasional deliveries across the East Coast.<br><br>
+                                    • Used my growing knowledge in Computer Science to get promoted to Systems Analyst.
+                                </p>
+								<ul class="statistics">
+									<li class="style5">
+										<span class="icon solid"><img src="https://img.icons8.com/nolan/64/exercise.png"/></span>
+										<strong>Sports Conditioning Trainer</strong> Independent/Self-Employed
+										<h5>2013 - Present</h5>
+									</li>
+								</ul>
+                                <p class="content">
+                                    • Create personalized workout routines for individuals.<br><br>
+                                    • Provide motivational support & confidence to clients.<br><br>
+                                    • Solve challenges to meet the unique goals of each client.<br><br>
+                                    • Use my knowledge to help those who wish to improve their overall health & fitness.
+                                </p>
+								<footer class="major">
+								</footer>
+							</section>
+
+						<!-- Third Section -->
+						<section id="third" class="main special">
+							<header class="major">
+								<h2>Skills</h2>
+							</header>
+							<header class="major">
+								<h3>Languages</h3>
+							</header>
+							<ul class="statistics">
+								<li class="style1">
+									<span class="icon solid"><img src="https://img.icons8.com/nolan/64/python.png"/></span>
+									<strong>Python</strong>
+                                        OOP<br>
+                                        API Development<br>
+                                        Data Modeling<br>
+                                        Data Analysis<br>
+                                        Unit Testing<br>
+								</li>
+								<li class="style2">
+									<span class="icon"><img src="https://img.icons8.com/nolan/64/javascript.png"/></span>
+									<strong>JavaScript</strong>
+                                        ASYNC<br>
+                                        JSX<br>
+                                        jQuery<br>
+                                        Dom Manipulation<br>
+                                        API Requests
+								</li>
+								<li class="style3">
+									<span class="icon solid"><img src="https://img.icons8.com/nolan/64/sql.png"/></span>
+									<strong>SQL</strong>
+                                        PostgreSQL<br>
+                                        MySQL<br>
+                                        SQLite<br>
+                                        Window Functions<br>
+								</li>
+								<li class="style4">
+									<span class="icon solid"><img src="https://img.icons8.com/nolan/64/html.png"/><img src="https://img.icons8.com/nolan/64/css-filetype.png"/></span>
+									<strong>HTML/CSS</strong>
+                                        BootStrap
+								</li>
+								<li class="style6">
+									<span class="icon"><img src="https://img.icons8.com/nolan/64/java-coffee-cup-logo.png"/></span>
+									<strong>Java</strong>
+                                        OOP<br>
+                                        Abstraction<br>
+                                        Inheritance<br>
+                                        Polymorphism<br>
+                                        Encapsulation<br>
+								</li>
+							</ul>
+							<header class="major">
+								<h3>Libraries & Frameworks</h3>
+							</header>
+							<ul class="statistics">
+								<li class="style7">
+									<span class="icon solid"><img src="https://img.icons8.com/windows/96/000000/django.png"/></span>
+									<strong>Django</strong>
+								</li>
+								<li class="style8">
+									<span class="icon"><img src="https://img.icons8
+									.com/pastel-glyph/96/000000/chili-pepper--v2.png"/></span>
+									<strong>Flask</strong>
+								</li>
+								<li class="style9">
+									<span class="icon solid"><img src="https://img.icons8.com/nolan/96/react-native.png"/></span>
+									<strong>React</strong>
+								</li>
+								<li class="style10">
+									<span class="icon solid"><img src="https://img.icons8.com/color/96/000000/nodejs.png"/></span>
+									<strong>Node</strong>
+								</li>
+
+							</ul>
+							<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+							<footer class="major">
+								<ul class="actions special">
+									<li><a href="{% url 'project_index' %}" class="button">View Projects</a></li>
+								</ul>
+							</footer>
+						</section>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Directory</h2>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="{% url 'homepage' %}" class="button">Home</a></li>
+										<li><a href="{% url 'project_index' %}" class="button">Projects</a></li>
+                                        <li><a href="{% url 'blog_index' %}" class="button" target="_blank">Blog</a></li>
+                                        <li><a href="https://github.com/Tom-OLeary" class="button" target="_blank">GitHub</a></li>
+                                        <li><a href="https://www.linkedin.com/in/tom-oleary19/" class="button" target="_blank"
+                                        >LinkedIn</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>Norton, MA 02766 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(774) 265-0484</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto: tom_oleary19@outlook.com">tom_oleary19@outlook.com</a></dd>
+							</dl>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js'%}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js'%}"></script>
+			<script src="{% static 'js/browser.min.js'%}"></script>
+			<script src="{% static 'js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'js/util.js'%}"></script>
+			<script src="{% static 'js/main.js'%}"></script>
+
+	</body>
+</html>
+
+{% endblock %}

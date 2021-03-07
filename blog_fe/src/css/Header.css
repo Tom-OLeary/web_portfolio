@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900);
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    padding: 0;
+    font-family: 'Montserrat', serif;
+    background: url(https://image.freepik.com/free-vector/retro-background-with-perspective-grid-vector-illustration_97886-253.jpg);
+  }
+
+  header {
+    padding: 0;
+    background-size: 800px;
+    height: 200px;
+  }
+
+  #blog {
+    font-size: 90px;
+    font-family: 'Rock Salt', sans-serif;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    line-height: 0.5;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'left left middle middle middle middle'
+      'footer footer footer footer footer footer';
+    background-image: url(https://www.jandlmarketing.com/wp-content/uploads/2020/01/Sleek-Background-Pattern.jpg);
+    background-size: cover;
+  }
+
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+  }
+
+  /* Style the left column */
+  .left {
+    grid-area: left;
+    background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/sleek-background-300x200.jpg);
+    mix-blend-mode: difference;
+    width: 530px;
+  }
+
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+  }
+
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  .mid-header {
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
+  }
+  h3.mid-header {
+    margin-top: 60px;
+  }
+
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas:
+        'header header header header header header'
+        'left left left left left left'
+        'middle middle middle middle middle middle'
+        'right right right right right right'
+        'footer footer footer footer footer footer';
+    }
+  }
