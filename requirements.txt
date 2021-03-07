@@ -1,0 +1,14 @@
+asgiref==3.3.1
+Django==3.1.5
+django-appconf==1.0.4
+django-compressor==2.4
+django-cors-headers==3.7.0
+django-libsass==0.8
+django-relativefilepathfield==1.0.3
+djangorestframework==3.12.2
+libsass==0.20.1
+pytz==2020.5
+rcssmin==1.0.6
+rjsmin==1.1.0
+six==1.15.0
+sqlparse==0.4.1
