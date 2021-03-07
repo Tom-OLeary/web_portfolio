@@ -672,7 +672,7 @@ body {
 				background-color: #79da7c;
 			}
 			.statistics li.style5 {
-				background-color: #8cc9f0;
+				background-color: #4aaae2;
 			}
 			.statistics li.style6 {
 				background-color: #d58512;
@@ -688,6 +688,12 @@ body {
 			}
 			.statistics li.style10 {
 				background-color: #88e2bd;
+			}
+			.statistics li.style11 {
+				background-color: #7e68c3;
+			}
+			.statistics li.style12 {
+				background-color: #f57a7a;
 			}
 
 			.statistics li strong, .statistics li b {
