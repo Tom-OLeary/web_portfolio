@@ -25,7 +25,7 @@ SECRET_KEY = 'r3=c!)qe_v!@u#b*z79kojs9%zwtn9y3vbw*$5sor$l5^8p7ox'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['troleary19.pythonanywhere.com']
 
 CORS_ORIGIN_ALLOW_ALL = True
 
