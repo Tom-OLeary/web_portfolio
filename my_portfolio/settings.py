@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'r3=c!)qe_v!@u#b*z79kojs9%zwtn9y3vbw*$5sor$l5^8p7ox'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['troleary19.pythonanywhere.com']
 
@@ -84,8 +84,11 @@ WSGI_APPLICATION = 'my_portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'troleary19$portfolio',
+        'USER': 'troleary19',
+        'PASSWORD': 'databasepw',
+        'HOST': 'troleary19.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -130,7 +133,8 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, 'blog_fe/build/static')
+    os.path.join(BASE_DIR, 'blog_fe/build/static'),
+    #'/var/www/static/',
 ]
 
 REST_FRAMEWORK = {
@@ -140,3 +144,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
