@@ -3,13 +3,22 @@ import './App.css';
 import BlogItems from "./components/BlogItems";
 import Header from "./components/Header";
 import Trivia from "./components/Trivia";
+require("dotenv").config();
 
 
 function App() {
     const [data, setData] = useState([])
+    let url = ''
+    if (process.env.NODE_ENV === 'development') {
+        url = 'http://127.0.0.1:8000/api/'
+    }
+
+    if (process.env.NODE_ENV === 'production') {
+        url = 'https://www.troleary.com/api/'
+    }
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/')
+        fetch(url)
             .then(res => res.json())
             .then(json => {
                 console.log(json);
