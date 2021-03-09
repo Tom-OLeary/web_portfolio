@@ -1,11 +1,130 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300&display=swap);
 
 * { font-family: 'Open Sans', sans-serif; }
 
-.blue { color: #3CF; }
+/********* Gradient Animation *********/
+.shadow {
+    position: relative;
+    margin: 25px auto 0;
+    width: 800px;
+    height: 650px;
+    background: linear-gradient(0deg,#000,#262626);
+}
+.shadow:before,
+.shadow:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 80s linear infinite;
+}
+.shadow:after {
+    filter: blur(20px);
+}
+@keyframes animate {
+    0%
+    {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+        background-position: 0 0;
+    }
+    50%
+    {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+        background-position: 500% 0;
+    }
+    100%
+    {
+        transform: translate3d(0px, 0px, 0px);
+        background-position: 0 0;
+    }
+
+}
+
+/* Mid Section */
+h2.about-title {
+    text-align: center;
+}
+.mid-section {
+    background: url(../img/body.jpg) no-repeat;
+    background-size: cover;
+}
+.about-ul, .about-ul-2 {
+    padding: 2px;
+    display: inline-table;
+    width: 180px;
+}
+.about-ul-2 {
+    width: 130px;
+}
+
+ul#about-concepts {
+    position: relative;
+    bottom: 100px;
+}
+.about-cat {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    color: #F45D22;
+}
+li {
+    margin-left: 30px;
+}
+/* Icons */
+#github {
+    background: url(../img/icons/icons8-github-48.png) top center no-repeat;
+    background-size: 45px 45px;
+}
+#linkedin {
+    background: url(../img/icons/icons8-linkedin-64.png) top center no-repeat;
+    background-size: 45px 45px;
+}
+#outlook {
+    background: url(../img/icons/icons8-microsoft-outlook-2019-48.png) top center no-repeat;
+    background-size: 45px 45px;
+}
+#gmail {
+    background: url(../img/icons/icons8-gmail-48.png) top center no-repeat;
+    background-size: 45px 45px;
+}
+
+.neon-base {
+    color: #F45D22;
+    text-shadow: 0 0 10px black;
+}
+/* Neon Lights */
+.neon {
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0 20px;
+    transform: translate(-50%,-50%);
+}
+#hp-name {
+    text-shadow: 5px 5px 5px #ea0909;
+}
+.neon .neon-base:before {
+    content: '';
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: -2;
+    opacity: 1;
+    filter: blur(70px);
+}
+p .about-description {
+    color: whitesmoke;
+}
 
 /*
 Preloader
@@ -203,7 +322,6 @@ body {
   color: white;
   margin-top: 150px;
 }
-.welcome-img { margin-top: 30px; }
 .welcome-title-1 {
   color: #F45D22;
   font-size: 36px;
@@ -307,7 +425,6 @@ body {
       font-size: 11px
     }
   }
-
 .fa-2x {
 font-size: 2em;
 }
@@ -320,13 +437,10 @@ text-align: center;
 vertical-align: middle;
 font-size:20px;
 }
-
-
 .main-menu:hover,nav.main-menu.expanded {
 width:250px;
 overflow:visible;
 }
-
 .main-menu {
   background:#000000;
   border-right: 1px solid #f34806;
@@ -342,17 +456,14 @@ overflow:visible;
   -webkit-transform:translateZ(0) scale(1,1);
   z-index:1000;
   }
-
 .main-menu>ul {
 margin:7px 0;
 }
-
 .main-menu li {
 position:relative;
 display:block;
 width:250px;
 }
-
 .main-menu li>a {
 position:relative;
 display:table;
@@ -367,25 +478,21 @@ text-decoration:none;
 transition:all .1s linear;
 
 }
-
 .main-menu .nav-text {
 position:relative;
 display:table-cell;
 vertical-align:middle;
 width:190px;
-  font-family: 'Titillium Web', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
-
 .main-menu>ul.logout {
 position:absolute;
 left:0;
 bottom:0;
 }
-
 a:hover,a:focus {
 text-decoration:none;
 }
-
 nav {
 -webkit-user-select:none;
 -moz-user-select:none;
@@ -409,10 +516,6 @@ background: #e2e2e2;
 width: 100%;
 height: 100%;
 }
-@font-face {
-  font-family: 'Titillium Web';
-}
-
 /* Footer */
 footer.hp-footer {
   background: linear-gradient(
@@ -423,7 +526,6 @@ footer.hp-footer {
   color: #B4B4B4;
   padding-top: 50px;
 }
-
 .hp-footer-div-title {
   color: white;
   font-size: 21px;
@@ -470,7 +572,6 @@ footer.hp-footer {
   margin-right: 10px;
   -webkit-box-shadow: 0 0 2px 0 rgba(224,224,224,1);
   box-shadow: 0 0 2px 0 rgba(0,0,0,0);
-
 }
 .hp-social-icon:last-child {
   margin-right: 0;
@@ -482,7 +583,6 @@ footer.hp-footer {
   background-size: contain;
   height: 96px;
 }
-
 /* About page */
 .about-slider {
   max-width: 930px;
@@ -496,7 +596,6 @@ footer.hp-footer {
 .services-page .hp-welcome {
   padding-bottom: 100px;
 }
-
 /* Flex Slider */
 .flexslider {
   position: relative;
@@ -535,7 +634,6 @@ ol.flex-control-nav { display: none; }
   font-size: 40px;
   outline: none;
 }
-
 a.flex-next:hover {
     color: #F45D22;
 }
@@ -613,11 +711,9 @@ p#and-more {
   color: whitesmoke;
   background: #F45D22;
 }
-
 @media screen and (min-width: 1700px) {
 
 }
-
 @media screen and (max-width: 1199px) {
  .hp-header {
    max-width: 992px;
@@ -632,7 +728,6 @@ p#and-more {
    margin-top: 50px;
  }
 }
-
 @media screen and (max-width: 991px) {
  .hp-header {
    max-width: 767px;
@@ -664,7 +759,6 @@ p#and-more {
   width: 100%;
  }
  .about-container {max-width: 660px;height: 900px;}
-
  .mid-section {
    background-size: cover;
  }
@@ -681,7 +775,6 @@ p#and-more {
  .submit-btn-container { margin-top: 15px; }
 
 }
-
 @media screen and (max-width: 767px) {
   .hp-top-section {
     background-size: cover;
@@ -692,7 +785,6 @@ p#and-more {
     font-size: 26px;
     padding-top: 20px;
   }
-
   .about-page .hp-welcome,
   .contact-page .hp-welcome,
   .services-page .hp-welcome {
@@ -713,7 +805,6 @@ p#and-more {
     width:50%;
   }
 }
-
 @media screen and (max-width: 630px) {
   .copyright-text {
     max-width: 100%;
@@ -726,7 +817,6 @@ p#and-more {
     width: 914px;
   }
 }
-
 @media screen and (max-width: 500px) {
   .hp-site-name {
     font-size: 40px;

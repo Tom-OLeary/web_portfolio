@@ -10,8 +10,10 @@
   <title>Tom's Portfolio</title>
   <meta name="description" content="">
 
-  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'css/index.css' %}" rel="stylesheet">
+  <link rel="preload" href="{% static 'css/bootstrap.min.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"></noscript>
+  <link rel="preload" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"></noscript>
   <link href="{% static 'css/homepage.css' %}" rel="stylesheet">
   <link rel="icon" href="https://img.icons8.com/color/48/000000/user-location.png" type="image/x-icon">
 
@@ -122,7 +124,8 @@
                   <li>
                     <div class="about-slider">
                       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                        <img src="{% static 'img/about/abstract.jpeg' %}" class="img-responsive welcome-title-1" alt="Image">
+                        <img src="{% static 'img/about/abstract.jpeg' %}" class="img-responsive welcome-title-1"
+                             alt="Image" width="202.5" height="134.56">
                       </div>
                       <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 about-slider-description">
                         <h2 class="text-uppercase welcome-title">
@@ -139,7 +142,8 @@
                   <li>
                     <div class="about-slider">
                       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                        <img src="{% static 'img/about/terminal.png' %}" class="img-responsive" alt="Image">
+                        <img src="{% static 'img/about/terminal.png' %}" class="img-responsive" alt="Image"
+                             width="202.5" height="202.5">
                       </div>
                       <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 about-slider-description">
                         <h2 class="text-uppercase welcome-title">
@@ -166,7 +170,7 @@
         <div class="numbertext">1 / 2</div>
         <div class="about-container shadow">
             <div class="about-container-left">
-              <img src="{% static 'img/about-me.jpg' %}" alt="Image" class="img-responsive">
+              <img src="{% static 'img/about-me.jpg' %}" alt="Image" class="img-responsive" width="340" height="212.5">
               <p class="about-description">As technology continues to improve at a rapid pace, there will always be new
                   knowledge to discover. This provides an exciting and rewarding career path in Computer Science. As
                   someone who is deeply passionate about technology, I am always eager to learn something new. </p>
@@ -232,7 +236,8 @@
         <div class="numbertext">2 / 2</div>
         <div class="about-container shadow">
             <div class="about-container-left">
-              <img src="{% static 'img/about-project.png' %}" alt="Image" class="img-responsive">
+              <img src="{% static 'img/about-project.png' %}" alt="Image" class="img-responsive" width="340"
+                   height="153.61">
                 <p class="about-description"><span style="color: #F45D22">Why Django?: </span>Although a back-end heavy framework may be considered
                   overboard for a standard web portfolio, I intend for this to be much more than that. I will
                     continue adding information to this portfolio, as each subsequent app will provide new languages
