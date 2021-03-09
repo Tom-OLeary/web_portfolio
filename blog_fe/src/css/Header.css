@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900);
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,25 +11,26 @@
   body {
     padding: 0;
     font-family: 'Montserrat', serif;
-    background: url(https://image.freepik.com/free-vector/retro-background-with-perspective-grid-vector-illustration_97886-253.jpg);
+    margin: 0;
+    background-color: #000000a8;
   }
 
   header {
     padding: 0;
     background-size: 800px;
     height: 200px;
+    background: url(../img/blog_header.png);
+    margin: 20px;
   }
 
   #blog {
-    font-size: 90px;
-    font-family: 'Rock Salt', sans-serif;
-    color: #fff;
+    font-size: 100px;
+    font-family: 'Redressed', cursive;
+    color: #0490bb;
     padding: 0;
     margin: 0;
-    line-height: 0.5;
     text-align: center;
-    margin-top: 20px;
-    font-weight: 100;
+    mix-blend-mode: color-burn;
   }
 
   /* The grid container */
@@ -72,7 +74,7 @@
     font-size: 20px;
   }
   h3.mid-header {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 
   /* Style the footer */
