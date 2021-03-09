@@ -10,11 +10,151 @@
   <title>Tom's Portfolio</title>
   <meta name="description" content="">
 
+  <style>
+    /* Preloader
+    https://ihatetomatoes.net/create-custom-preloading-screen/
+    */
+      #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #F62F2F;
+
+        -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+        z-index: 1001;
+    }
+        #loader:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #F45D22;
+
+            -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+            animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+        }
+        #loader:after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #fb0094;
+
+            -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+              animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+        }
+        @-webkit-keyframes spin {
+            0%   {
+                -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(0deg);  /* IE 9 */
+                transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+            }
+            100% {
+                -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(360deg);  /* IE 9 */
+                transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+            }
+        }
+        @keyframes spin {
+            0%   {
+                -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(0deg);  /* IE 9 */
+                transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+            }
+            100% {
+                -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: rotate(360deg);  /* IE 9 */
+                transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+            }
+        }
+        #loader-wrapper .loader-section {
+            position: fixed;
+            top: 0;
+            width: 51%;
+            height: 100%;
+            background: black;
+            z-index: 1000;
+            -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(0);  /* IE 9 */
+            transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+        }
+        #loader-wrapper .loader-section.section-left {
+            left: 0;
+        }
+        #loader-wrapper .loader-section.section-right {
+            right: 0;
+        }
+        /* Loaded */
+        .loaded #loader-wrapper .loader-section.section-left {
+            -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: translateX(-100%);  /* IE 9 */
+                    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+            -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+        .loaded #loader-wrapper .loader-section.section-right {
+            -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: translateX(100%);  /* IE 9 */
+                    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+
+        .loaded #loader {
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-out;
+                    transition: all 0.3s ease-out;
+        }
+        .loaded #loader-wrapper {
+            visibility: hidden;
+
+            -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                -ms-transform: translateY(-100%);  /* IE 9 */
+                    transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+            -webkit-transition: all 0.3s 1s ease-out;
+                    transition: all 0.3s 1s ease-out;
+        }
+        /* JavaScript Turned Off */
+        .no-js #loader-wrapper {
+            display: none;
+        }
+        .no-js h1 {
+            color: #222222;
+        }
+  </style>
   <link rel="preload" href="{% static 'css/bootstrap.min.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"></noscript>
   <link rel="preload" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"></noscript>
-  <link href="{% static 'css/homepage.css' %}" rel="stylesheet">
+  <link rel="preload" href="{% static 'css/homepage.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{% static 'css/homepage.css' %}"></noscript>
   <link rel="icon" href="https://img.icons8.com/color/48/000000/user-location.png" type="image/x-icon">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -65,7 +205,7 @@
                             </a>
                         </li>
                         <li class="has-subnav">
-                            <a href="https://github.com/tom-oleary" target="_blank">
+                            <a href="https://github.com/tom-oleary" target="_blank" rel="noopener">
                                <i class="fa fa-github fa-2x"></i>
                                 <span class="nav-text">
                                     GitHub
@@ -73,7 +213,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/tom-oleary19/" target="_blank">
+                            <a href="https://www.linkedin.com/in/tom-oleary19/" target="_blank" rel="noopener">
                                 <i class="fa fa-linkedin fa-2x"></i>
                                 <span class="nav-text">
                                     LinkedIn
@@ -198,26 +338,18 @@
                   </ul>
                 </p>
               <ul class="about-ul details-top"><span class="about-cat">Hobbies:</span>
-                <p>
-                  <ul>
                       <li>Programming</li>
                       <li>Researching</li>
                       <li>Reading</li>
                       <li>Sports</li>
                       <li>Documentaries</li>
-                  </ul>
-                </p>
               </ul>
               <ul class="about-ul details-top"><span class="about-cat">Career Interests:</span>
-                <p>
-                  <ul>
                       <li>Full Stack Development</li>
                       <li>Web Development</li>
                       <li>Sports Analytics</li>
                       <li>Game Development (although I currently have minimal knowledge regarding this)</li>
                       <li>Client or Server-Side Development</li>
-                  </ul>
-                </p>
               </ul>
               <ul class="about-ul" id="about-concepts"><span class="about-cat">Project Experience:</span>
                   <li>API Development</li>
@@ -255,7 +387,8 @@
                     through real experience, and not just research. In order to have a strong understanding of the
                     software development cycle, it is important I discover the trade-offs between each technology
                     available today.</p>
-                <a href="https://github.com/Tom-OLeary/web_portfolio" class="about-link" target="_blank">Source Code</a>
+                <a href="https://github.com/Tom-OLeary/web_portfolio" class="about-link" target="_blank"
+                   rel="noopener">Source Code</a>
             </div>
             <div class="about-container-right">
               <h2 class="about-title">About This Application</h2>
@@ -373,8 +506,9 @@
           <div class="col-lg-4 col-md-4 hp-footer-div">
             <h3 class="hp-footer-div-title">Links</h3>
             <div class="hp-social-icons-container">
-              <a href="https://github.com/Tom-OLeary" class="hp-social-icon" id="github" target="_blank"></a>
-              <a href="https://www.linkedin.com/in/tom-oleary19/" class="hp-social-icon" id="linkedin" target="_blank"></a>
+              <a href="https://github.com/Tom-OLeary" class="hp-social-icon" id="github" target="_blank" rel="noopener"></a>
+              <a href="https://www.linkedin.com/in/tom-oleary19/" class="hp-social-icon" id="linkedin"
+                 target="_blank" rel="noopener"></a>
               <a href="mailto: tom_oleary19@outlook.com" class="hp-social-icon" id="outlook"></a>
               <a href="mailto: troleary19@gmail.com" class="hp-social-icon" id="gmail"></a>
             </div>
@@ -387,9 +521,9 @@
     </footer> <!-- Footer content-->
 
     <!-- JS -->
-    <script type="text/javascript" src="{% static 'js/jquery-1.11.2.min.js' %}"></script><!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" defer src="{% static 'js/hp-script.js' %}"></script>
-    <script defer src="{% static 'js/jquery.flexslider-min.js' %}"></script><!-- FlexSlider -->
+    <script defer src="{% static 'js/jquery.flexslider-min.js' %}"></script>
     <script>
       $(window).load(function() {
         $('.flexslider').flexslider({
