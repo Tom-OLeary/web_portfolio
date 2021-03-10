@@ -17,16 +17,15 @@ function BlogItems(props) {
 
               if ($("div.dashboard-cards").hasClass("showing")) {
                 $("div.card.d-card-show")
-                  .removeClass("d-card-show");
-
+                  .removeClass("d-card-show")
+                  .css({zIndex: 1});
                 if (isShowing) {
                   $("div.dashboard-cards")
-                    .removeClass("showing");
+                    .removeClass("showing")
                 } else {
                   $("."+props.id)
                     .css({zIndex: zindex})
                     .addClass("d-card-show");
-
                 }
                 zindex++;
 
@@ -42,6 +41,19 @@ function BlogItems(props) {
             });
     }
 
+    const handleCheckCompletion = (props) => {
+        if (props === 'completed') {
+            return <div className='task-count'>
+                ✅
+            </div>;
+        }
+        else {
+            return <div className='task-count'>
+                ☑️
+            </div>;
+        }
+    }
+
     return (
         <>
         <div className={`card col-md-4 ${props.id}`} onClick={handleClick}>
@@ -50,9 +62,7 @@ function BlogItems(props) {
                 {props.entry}
                 <small>{props.created}</small>
             </h2>
-            <div className='task-count'>
-                logo
-            </div>
+            {handleCheckCompletion(props.statusOf)}
             </div>
             <div className='card-flap flap1'>
             <div className='card-description'>

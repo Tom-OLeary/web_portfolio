@@ -37,7 +37,7 @@ function App() {
             <div className="middle">
                 <h2 className="mid-header">Page Info</h2>
                 <div className="row dashboard-cards">
-            {data.map((t, index) => <BlogItems entry={t.title} body={t.body} created={t.created_on} id={`id${index}`}/>)}
+            {data.map((t, index) => <BlogItems statusOf={t.statusOf} entry={t.title} body={t.body} created={t.created_on} id={`id${index}`}/>)}
                 </div>
                 <h2 className="mid-header">Future Updates</h2>
                 <p className="mid-header">Posts about upcoming apps/pages will be displayed here...</p>
