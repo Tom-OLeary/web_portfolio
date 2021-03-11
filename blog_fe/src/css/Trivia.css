@@ -247,11 +247,11 @@ input[type=radio]:checked ~ .option {
 
 @media(min-width : 350px) and (max-width : 700px){
    .game-quiz-container{
-       width: 90%;
-       height: 80vh;
+       width: 50rem;
+       height: 70vh;
     }
     .game-details-container h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .game-question-container{
@@ -259,7 +259,7 @@ input[type=radio]:checked ~ .option {
     }
 
     .game-question-container h1{
-        font-size: 0.9rem;
+        font-size: 1.5rem;
      }
 
     .game-options-container span{
@@ -272,9 +272,44 @@ input[type=radio]:checked ~ .option {
     .modal-content-container h1{
         font-size: 1.2rem;
     }
+    .next-button-container button {
+        margin-top: 180px;
+    }
 }
 
+@media(min-width : 601px) and (max-width : 991px){
+   .game-quiz-container{
+       width: 31rem;
+       height: 70vh;
+    }
 
+    .game-details-container h1{
+        font-size: 1.5rem;
+    }
+
+    .game-question-container{
+        height: 8rem;
+    }
+
+    .game-question-container h1{
+        font-size: 1.5rem;
+     }
+
+    .game-options-container span{
+        width: 90%;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 25rem;
+    }
+    .modal-content-container h1{
+        font-size: 1.2rem;
+    }
+    .next-button-container button {
+        margin-top: 180px;
+    }
+
+}
 
 @keyframes fadeIn {
     from {opacity: 0;}

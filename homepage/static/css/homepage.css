@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-* { font-family: 'Open Sans', sans-serif; }
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 
 /********* Gradient Animation *********/
 .shadow {
@@ -157,7 +159,7 @@ body {
 }
 .hp-site-name {
   color: whitesmoke;
-  font-size: 46px;
+  font-size: 3em;
   margin: 0;
   padding-top: 25px;
   text-align: left;
@@ -175,9 +177,9 @@ body {
 }
 .welcome-title-1 {
   color: #F45D22;
-  font-size: 36px;
+  font-size: 1.2em;
 }
-.welcome-title-2 { font-size: 18px; }
+.welcome-title-2 {font-size: .6em;}
 .welcome-title-1,
 .welcome-title-2 {
  display: block;
@@ -592,10 +594,10 @@ p#and-more {
  }
  .welcome-slider { margin-top: 100px; }
  .welcome-title-1 {
-   font-size: 26px;
+   font-size: 1em;
  }
  .welcome-title-2 {
-   font-size: 36px;
+   font-size: .6em;
  }
  .hp-footer-div { margin-bottom: 40px; }
  .copyright-text {
@@ -633,8 +635,7 @@ p#and-more {
   }
 
   .hp-site-name {
-    font-size: 26px;
-    padding-top: 20px;
+    font-size: 2.3em;
   }
   .about-page .hp-welcome,
   .contact-page .hp-welcome,
@@ -650,10 +651,7 @@ p#and-more {
     margin-top: 15px;
   }
   .about-page .welcome-title-2 {
-    font-size: 28px;
-  }
-  .img-responsive {
-    width:50%;
+    font-size: .6em;
   }
 }
 @media screen and (max-width: 630px) {

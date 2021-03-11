@@ -1,5 +1,8 @@
 /* Code By Webdevtrick (https://webdevtrick.com) */
 
+  ul {
+    display: flex;
+  }
   .dashboard-cards {
     position: relative;
     padding-bottom: 50px;
@@ -37,7 +40,7 @@
   }
 
   .dashboard-cards .card .card-title h2 {
-    font-size: 24px;
+    font-size: 2.3em;
     letter-spacing: -0.05em;
     margin: 0;
     padding: 0;
@@ -177,3 +180,28 @@
       width: 100%;
     }
   }
+  @media(min-width : 601px) and (max-width: 991px) {
+    .dashboard-cards .card .card-title h2 {
+      font-size: 1.8em;
+  }
+    .dashboard-cards .card .task-count {
+      width: 30px;
+      height: 30px;
+      top: 4em;
+  }
+ }
+ @media (max-width: 1284px) {
+   ul {
+     display: block;
+   }
+ }
+  @media (max-width: 1086px) {
+   ul {
+     display: inline-flex;
+   }
+ }
+  @media (max-width: 620px) {
+    ul {
+      display: flex;
+    }
+ }

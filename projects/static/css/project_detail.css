@@ -48,3 +48,31 @@ h4 {
     margin-bottom: 10px;
     line-height: 40px
 }
+@media (min-width: 992px) {
+    .container {
+        max-width: 1060px;
+    }
+}
+
+@media (max-width: 991px){
+    .container {
+        max-width: 1080px;
+    }
+    body:before {
+        font-size: 3.5em;
+    }
+    .col-md-4 {
+        margin: 1px;
+    }
+}
+@media (max-width: 768px){
+    .container {
+        max-width: 600px;
+    }
+    h5 {
+        font-size: 1.5em;
+    }
+    body:before {
+        font-size: 2em;
+    }   
+}
