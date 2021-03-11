@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-* {
-    font-family: 'Open Sans', sans-serif;
-}
+* {font-family: 'Open Sans', sans-serif;}
 
 /********* Gradient Animation *********/
 .shadow {
@@ -177,9 +175,9 @@ body {
 }
 .welcome-title-1 {
   color: #F45D22;
-  font-size: 1.2em;
+  font-size: 36px;
 }
-.welcome-title-2 {font-size: .6em;}
+.welcome-title-2 {font-size: 18px;}
 .welcome-title-1,
 .welcome-title-2 {
  display: block;
