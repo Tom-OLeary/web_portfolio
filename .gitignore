@@ -1,6 +1,5 @@
 venv
 .idea
 .DS_STORE
-.env
 my_portfolio/local.py
 db.sqlite3

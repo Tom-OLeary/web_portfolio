@@ -147,7 +147,7 @@ body {
 		margin: 0 0 2em 0;
 	}
 	#intro-p {
-		font-family: 'Gill Sans';
+		font-family: 'Gill Sans', sans-serif;
 	}
 
 		p.content {
