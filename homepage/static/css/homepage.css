@@ -562,6 +562,10 @@ p#and-more {
   color: whitesmoke;
   background: #F45D22;
 }
+.menu-separator {
+    border-bottom: 1px solid #F45D22;
+    border-bottom-width: medium;
+}
 @media screen and (min-width: 1700px) {
 
 }
