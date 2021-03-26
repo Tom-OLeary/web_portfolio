@@ -53,7 +53,7 @@ function Trivia(props) {
                 </div>
             </div>
         </div>
-        <div className="game-quiz-container">
+        <div className="game-quiz-container-2">
             <div className="game-details-container">
                 <h1>Score : <span id="player-score"></span> / 10</h1>
                 <button onClick={() => NextQuestion(0, questions)} id="play-button">Play Trivia</button>

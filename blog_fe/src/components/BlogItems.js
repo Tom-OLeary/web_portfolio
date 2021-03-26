@@ -47,11 +47,20 @@ function BlogItems(props) {
                 ✅
             </div>;
         }
-        else {
-            return <div className='task-count'>
-                ☑️
-            </div>;
+        let result = ''
+        switch (props) {
+            case 'future':
+                result = '🔮️'
+                break
+            case 'info':
+                result = 'ℹ️'
+                break
+            default:
+                result = '❌'
+                break
         }
+
+        return <div className='task-count'>{result}</div>
     }
 
     return (

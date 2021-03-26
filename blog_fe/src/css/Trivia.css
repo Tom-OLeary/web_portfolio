@@ -24,7 +24,16 @@ main{
     justify-content: space-around;
     border-radius: 30px;
 }
-
+.game-quiz-container-2{
+    width: 51rem;
+    height: 40rem;
+    background-color: #000000;
+    display: table-caption;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+}
 .game-details-container{
     height: 4rem;
     display: flex;

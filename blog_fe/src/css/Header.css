@@ -33,16 +33,56 @@
   }
 
   /* The grid container */
-  .grid-container {
+  .grid-container,
+  .grid-container-2 {
     display: grid;
     grid-template-areas:
-      'header header header header header header'
-      'left left middle middle middle middle'
-      'footer footer footer footer footer footer';
-    background-image: url(https://www.jandlmarketing.com/wp-content/uploads/2020/01/Sleek-Background-Pattern.jpg);
+      'middle middle middle middle';
+    background: url(../img/water-bg.jpeg);
     background-size: cover;
+    margin-bottom: 25px;
   }
-
+  .grid-container {
+    grid-template-columns: 0 0 680px 280px 420px;
+  }
+  .top-description {
+    padding: 20px;
+    margin: 10px;
+  }
+  .top-description > p,
+  .top-description ul{
+    font-size: 1.8rem;
+    color: whitesmoke;
+    position: relative;
+    right: 1.5em;
+    margin: 1px;
+  }
+  .top-description ul {
+    font-size: 1.5rem;
+    display: contents;
+  }
+  .ul-description li{
+    padding: 1px;
+  }
+  .grid-container-2 {
+    margin: 40px;
+    /*background-image: url(https://www.jandlmarketing.com/wp-content/uploads/2020/01/Sleek-Background-Pattern.jpg);*/
+    background: url(../img/container4.jpeg) left;
+    grid-template-areas:
+      'left left middle middle middle middle';
+  }
+  .grid-container-2 p {
+    margin-left: 50px;
+    padding: 8px;
+    color: whitesmoke;
+  }
+  .grid-container-3 {
+    display: grid;
+    grid-template-areas:
+      /*'left middle right';*/
+    'left middle middle right';
+    margin-bottom: 25px;
+  }
   .left,
   .middle,
   .right {
@@ -61,10 +101,24 @@
   .middle {
     grid-area: middle;
   }
+  .middle#grid3 {
+    margin: 15px;
+    width: 440px;
+  }
+  #left.left,
+  #right.right {
+    width: 450px;
+  }
+  #right.right {
 
+  }
   /* Style the right column */
   .right {
     grid-area: right;
+    background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/sleek-background-300x200.jpg);
+    right: 0;
+    margin: 0;
+    width: 530px;
   }
   .mid-header {
     color: whitesmoke;
