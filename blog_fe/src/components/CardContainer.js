@@ -35,8 +35,9 @@ export default function CardContainer(props) {
                     <li>Tasks Model for "Issues" Posts</li>
                     <li>Proper Scaling for Different Screen Sizes (CSS is currently structured for a 1400-1600px min-max width)</li>
                     <li>Add Section to Hold All Solved Issues</li>
-                    <li>Refactor Components Into Smaller, Manageable Items for Re-usability.</li>
+                    <li>Refactor Components Into Smaller, Manageable Items for Re-usability</li>
                     <li>Reorganize & Bundle CSS</li>
+                    <li>Navbar Collapse Menu Only Works at a Screen Size Below 768px & Needs to be Fixed</li>
                 </ul>
                 <p>More info coming soon as I finish building this page...</p>
             </div>

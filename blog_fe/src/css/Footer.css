@@ -22,3 +22,7 @@ a.nav-link {
     background-color: #000000!important;
     height: 8vh;
 }
+.navbar-toggler {
+    background-color: white;
+    border: 1px solid white;
+}

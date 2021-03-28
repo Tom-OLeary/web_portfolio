@@ -16,7 +16,7 @@ export default function Footer(props) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <a className="nav-link nav-font" href="https://www.troleary.com/projects">Projects</a>
+                            <a className="nav-link" href="https://www.troleary.com/projects">Projects</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="https://www.github.com/tom-oleary" target="_blank">GitHub</a>
@@ -25,7 +25,7 @@ export default function Footer(props) {
                             <a className="nav-link" href="https://www.linkedin.com/in/tom-oleary19/" target="_blank">LinkedIn</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-font" href="https://www.troleary.com/resume">Resume</a>
+                            <a className="nav-link" href="https://www.troleary.com/resume">Resume</a>
                         </li>
                     </ul>
                 </div>
