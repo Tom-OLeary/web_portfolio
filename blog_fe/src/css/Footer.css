@@ -1,0 +1,24 @@
+/* Style the footer */
+.footer {
+    grid-area: footer;
+    background: url(../img/blog_footer.png) bottom;
+    padding: 0;
+    height: 200px;
+    margin: 20px;
+}
+.navbar {
+    top: 15rem;
+}
+.nav-link {
+    font-size: 2.5rem;
+}
+a.nav-link {
+    color: #d20a0a;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+.bg-light {
+    background-color: #000000!important;
+    height: 8vh;
+}

@@ -9,30 +9,4 @@ body {
   margin: 30px;
 }
 
-.btn {
-  padding: 10px 20px;
-  cursor: pointer;
-  min-width: 100px;
-  border-radius: 3px;
-  color: black;
-  transition: opacity 180ms ease-out, transform 180ms ease-out;
-  background-color: #ccc5c5;
-}
-a.btn {
-  font-size: 15px;
-}
-.btn:hover {
-  opacity: 0.8;
-}
-.btn:active {
-  transform: translate(1px, 1px);
-}
-.btn-primary {
-  background-color: var(--primary);
-}
-.btn-outline {
-  border: 1px solid var(--dark);
-  color: var(--dark);
-}
-
 
