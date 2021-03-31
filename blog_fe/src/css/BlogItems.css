@@ -6,6 +6,7 @@
   .dashboard-cards {
     position: relative;
     padding-bottom: 50px;
+    padding-right: 10px;
     margin: 0 !important;
     left: 10px;
   }
@@ -23,6 +24,7 @@
     transition: all 0.3s 0s ease-in;
     z-index: 1;
     width: calc(33.33333333% - 10px);
+    /*width: 100%;*/
     cursor: pointer;
     transition: all 0.3s ease;
   }

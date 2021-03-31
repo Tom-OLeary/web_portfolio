@@ -22,7 +22,7 @@ export default function CardContainer(props) {
             {data.map((t, index) => <BlogItems statusOf={t.statusOf} entry={t.title} body={t.body} created={t.created_on} id={`id${index}`}/>)}
                 </div>
             </div>
-            <div className="top-description">
+            <div className="right top-description">
                 <p><strong>Keys:</strong></p>
                 <ul className="ul-description">
                     <li>❌ → Incomplete Issue or Bug</li>
